@@ -11,7 +11,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
     // Hide loader after a brief animation, giving time for the page to effectively render
     const timer = setTimeout(() => {
       setIsPageLoading(false)
-    }, 1500)
+    }, 400)
 
     return () => clearTimeout(timer)
   }, [])

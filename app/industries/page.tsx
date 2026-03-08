@@ -61,7 +61,7 @@ export default function IndustriesPage() {
               className="bg-white p-8 md:p-12 rounded-3xl shadow-xl shadow-orange-100 border border-[#f29f05]/10"
             >
               <motion.h3 variants={fadeUpVariant} className="text-2xl font-bold mb-8 text-[#363636] border-b pb-4">Industries</motion.h3>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   { icon: <Store size={28} />, name: "Restaurants & Cafes" },
                   { icon: <ShoppingBag size={28} />, name: "Grocery Stores" },

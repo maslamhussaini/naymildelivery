@@ -82,27 +82,9 @@ export default function Home() {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               className="relative hidden lg:block h-[600px]"
             >
-              {/* Abstract Delivery Illustration Placeholder, could be replaced with real image */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-orange-400 to-[#f29f05] rounded-3xl shadow-2xl rotate-3 transform-gpu overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full p-12">
-                   <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-xl flex flex-col gap-6 text-white transform -rotate-3 transition-transform hover:rotate-0 duration-500">
-                      <div className="flex items-center gap-4 border-b border-white/20 pb-4">
-                        <div className="p-3 bg-white/20 rounded-full"><Bike size={32} /></div>
-                        <div>
-                          <div className="font-bold text-xl">Fast Delivery</div>
-                          <div className="text-white/80 text-sm">On-time, every time</div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-4 py-2">
-                        <div className="p-3 bg-white/20 rounded-full"><MapPin size={32} /></div>
-                        <div>
-                          <div className="font-bold text-xl">Live Tracking</div>
-                          <div className="text-white/80 text-sm">Monitor your shipments</div>
-                        </div>
-                      </div>
-                   </div>
-                </div>
+              <div className="absolute inset-0 z-0">
+                 <Image src="/photo-1.png" alt="Delivery Rider" fill className="object-cover rounded-3xl" priority />
+                 <div className="absolute inset-0 bg-gradient-to-tr from-orange-400/20 to-[#f29f05]/30 rounded-3xl"></div>
               </div>
 
               {/* Floating badges */}
