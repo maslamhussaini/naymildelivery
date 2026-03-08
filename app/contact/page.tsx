@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin } from 'lucide-react'
+import Image from 'next/image'
 
 export default function ContactPage() {
   return (
@@ -9,11 +10,30 @@ export default function ContactPage() {
         {/* Contact Section */}
         <section id="contact" className="py-12 bg-[#FFF9F5]">
           <div className="container mx-auto px-6 md:px-12">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-[#363636] mb-6">Get In Touch</h2>
-              <p className="text-[#787878] text-lg">
-                If you are looking for professional delivery riders or drivers for your business, Naymil Delivery Services Co. is here to help.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="relative h-[400px] w-full hidden lg:block"
+              >
+                 <Image src="/photo-2.jpg" alt="Get In Touch" fill className="object-cover rounded-3xl shadow-2xl" priority />
+              </motion.div>
+              <div className="text-left max-w-2xl">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#363636] mb-6">Get In Touch</h2>
+                <p className="text-[#787878] text-lg mb-8">
+                  If you are looking for professional delivery riders or drivers for your business, Naymil Delivery Services Co. is here to help.
+                </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-[#f29f05]/10 flex items-center justify-center rounded-full text-[#f29f05]">
+                    <Phone size={28} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-xl text-[#363636]">24/7 Support</h4>
+                    <p className="text-[#787878]">We are always here to help you</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="grid lg:grid-cols-3 gap-8">
