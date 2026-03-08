@@ -83,7 +83,7 @@ export default function Home() {
               className="relative hidden lg:block h-[600px]"
             >
               <div className="absolute inset-0 z-0">
-                 <Image src="/photo-1.png" alt="Delivery Rider" fill className="object-cover rounded-3xl" priority />
+                 <Image src="/home_driver_orange.png" alt="Delivery Rider" fill className="object-cover rounded-3xl" priority />
                  <div className="absolute inset-0 bg-gradient-to-tr from-orange-400/20 to-[#f29f05]/30 rounded-3xl"></div>
               </div>
 
