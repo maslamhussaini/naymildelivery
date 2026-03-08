@@ -58,7 +58,7 @@ export default function Home() {
             <a href="#home" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">Home</a>
             <a href="#services" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">Our Services</a>
             <a href="#about" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">About Us</a>
-            <a href="#industries" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">Industries We Serve</a>
+            <a href="#industries" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">Industries</a>
 
             <a href="#contact" className="px-6 py-2.5 btn-quickeat rounded-full transition-all shadow-lg shadow-[#f29f05]/30 hover:-translate-y-0.5">
               Contact Us
@@ -84,7 +84,7 @@ export default function Home() {
             <a href="#home" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">Home</a>
             <a href="#services" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">Our Services</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">About Us</a>
-            <a href="#industries" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">Industries We Serve</a>
+            <a href="#industries" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">Industries</a>
 
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="btn-quickeat py-3 rounded-full w-full">Contact Us</a>
           </motion.div>
