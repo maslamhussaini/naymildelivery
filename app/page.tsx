@@ -1,16 +1,16 @@
 'use client'
 
-import { motion, AnimatePresence } from 'framer-motion'
-import { Bike, Car, Truck, Phone, Mail, MapPin, CheckCircle2, Menu, X, ArrowRight, Store, Pill, ShoppingBag, Package } from 'lucide-react'
+import { motion, AnimatePresence, Variants } from 'framer-motion'
+import { Bike, Truck, Phone, Mail, MapPin, CheckCircle2, Menu, X, ArrowRight, Store, Pill, ShoppingBag, Package } from 'lucide-react'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
-const fadeUpVariant = {
+const fadeUpVariant: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 }
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
