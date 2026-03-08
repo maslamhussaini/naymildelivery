@@ -1,6 +1,7 @@
 'use client'
 
 import { motion, Variants } from 'framer-motion'
+import Image from 'next/image'
 
 const fadeUpVariant: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -27,11 +28,16 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="relative h-[500px] rounded-3xl overflow-hidden bg-gray-900 hidden lg:block"
+                className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl hidden lg:block"
               >
-                {/* Image Placeholder with overlay */}
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60 mix-blend-luminosity"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
+                 <Image 
+                   src="/about_us_hero.png" 
+                   alt="Logistics Operations Center" 
+                   fill 
+                   className="object-cover" 
+                   priority 
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 
                 <div className="absolute bottom-0 left-0 w-full p-10">
                   <div className="inline-block bg-[#f29f05] text-white px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wide mb-4">
