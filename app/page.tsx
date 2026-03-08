@@ -135,7 +135,7 @@ export default function Home() {
                 Your Package, Our Priority
               </motion.div>
               
-              <motion.h1 variants={fadeUpVariant} className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-[#363636]">
+              <motion.h1 variants={fadeUpVariant} className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-[#363636]">
                 Reliable Delivery <br />
                 <span className="text-[#f29f05]">Riders & Drivers</span> <br />
                 for Your Business
