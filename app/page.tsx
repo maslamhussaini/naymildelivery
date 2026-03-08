@@ -58,26 +58,7 @@ export default function Home() {
             <a href="#home" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">Home</a>
             <a href="#services" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">Our Services</a>
             <a href="#about" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">About Us</a>
-            
-            <div className="relative group">
-              <a href="#industries" className="flex items-center gap-1 hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2 cursor-pointer">
-                Industries <ChevronDown size={16} />
-              </a>
-              <div className="absolute top-full left-0 w-64 bg-white shadow-[0px_10px_10px_3px_rgba(0,0,0,0.15)] rounded-b-md opacity-0 invisible translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-400 z-50 py-4 mt-2">
-                {[
-                  "Restaurants & Cafes",
-                  "Grocery Stores",
-                  "Pharmacies",
-                  "E-commerce Businesses",
-                  "Courier & Logistics Companies",
-                  "Retail Shops"
-                ].map((item, i) => (
-                  <a key={i} href="#industries" className="block px-6 py-2.5 text-sm text-[#363636] hover:text-[#f29f05] hover:pl-8 transition-all duration-300 border-none font-normal">
-                    {item}
-                  </a>
-                ))}
-              </div>
-            </div>
+            <a href="#industries" className="hover:text-[#f29f05] transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-transparent hover:after:bg-[#f29f05] after:transition-all pb-2">Industries We Serve</a>
 
             <a href="#contact" className="px-6 py-2.5 btn-quickeat rounded-full transition-all shadow-lg shadow-[#f29f05]/30 hover:-translate-y-0.5">
               Contact Us
@@ -103,15 +84,7 @@ export default function Home() {
             <a href="#home" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">Home</a>
             <a href="#services" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">Our Services</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">About Us</a>
-            
-            <div className="border-b pb-4">
-              <a href="#industries" onClick={() => setMobileMenuOpen(false)} className="mb-3 block">Industries We Serve</a>
-              <div className="flex flex-col gap-3 pl-4 text-base text-gray-500 font-normal">
-                {["Restaurants & Cafes", "Grocery Stores", "Pharmacies", "E-commerce Businesses", "Courier & Logistics Companies", "Retail Shops"].map((item, i) => (
-                    <a key={i} href="#industries" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#f29f05]">{item}</a>
-                ))}
-              </div>
-            </div>
+            <a href="#industries" onClick={() => setMobileMenuOpen(false)} className="border-b pb-4">Industries We Serve</a>
 
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="btn-quickeat py-3 rounded-full w-full">Contact Us</a>
           </motion.div>
