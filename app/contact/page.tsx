@@ -17,7 +17,7 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 className="relative h-[400px] w-full hidden lg:block"
               >
-                 <Image src="/photo-6.jpg" alt="Get In Touch - Delivery Rider" fill className="object-cover rounded-3xl shadow-2xl" priority />
+                 <Image src="/contact_driver_orange.png" alt="Get In Touch - Delivery Rider" fill className="object-cover rounded-3xl shadow-2xl" priority />
               </motion.div>
               <div className="text-left max-w-2xl">
                 <h2 className="text-3xl md:text-5xl font-bold text-[#363636] mb-6">Get In Touch</h2>
