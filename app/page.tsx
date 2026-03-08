@@ -42,12 +42,14 @@ export default function Home() {
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           <a href="#" className="flex items-center gap-2">
-            {/* The user should place their logo in public/logo.png */}
-            <div className="relative h-10 w-32 md:h-12 md:w-40 flex items-center">
-              <span className="text-2xl font-bold text-[#f29f05] flex items-center gap-2">
-                <div className="h-10 w-10 bg-[#f29f05] text-white rounded-lg flex items-center justify-center font-black text-xl italic shadow-lg shadow-[#f29f05]/30">N</div>
-                Naymil
-              </span>
+            <div className="relative h-12 w-48 md:h-16 md:w-56 flex items-center">
+              <Image 
+                src="/logo.jpg" 
+                alt="Naymil Delivery Services Co. Logo" 
+                fill
+                className="object-contain object-left"
+                priority
+              />
             </div>
           </a>
 
@@ -539,10 +541,14 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12 border-t border-gray-800">
         <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold flex items-center gap-2 text-white">
-              <div className="h-8 w-8 bg-[#f29f05] text-white rounded-md flex items-center justify-center font-black text-lg italic">N</div>
-              Naymil
-            </span>
+            <div className="relative h-10 w-40 flex items-center">
+              <Image 
+                src="/logo.jpg" 
+                alt="Naymil Delivery Services Co. Logo" 
+                fill
+                className="object-contain object-left"
+              />
+            </div>
           </div>
           <p className="text-gray-400 text-sm text-center md:text-left">
             &copy; {new Date().getFullYear()} Naymil Delivery Services Co. All rights reserved.
